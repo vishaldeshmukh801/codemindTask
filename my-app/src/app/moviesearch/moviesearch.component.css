@@ -1,0 +1,30 @@
+nav{
+    padding-top: 30px;
+    padding-bottom: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #FF9A8B;
+background-image: linear-gradient(90deg, #FF9A8B 0%, #FF6A88 55%, #FF99AC 100%);
+
+}
+input{
+    width: 400px;
+    height: 40px;
+    border-radius: 5px;
+font-size: xx-large;
+font-style: italic;
+}
+button{
+    width: 100px;
+    height: 40px;
+    margin-left: 20px;
+    color: white;
+    background-color: blue;
+    border-radius: 10px;
+    font-weight: 600;
+    font-style: italic;
+}
+strong{
+    font-size: xx-large;
+}

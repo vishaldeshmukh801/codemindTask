@@ -1,0 +1,24 @@
+
+<div>
+    <nav class="nav nav-tabs">
+        <input [(ngModel)]="searchBar" placeholder="Search Movies" class="nav-item">
+        <button (click)="searchMovies()">Search</button>
+    </nav>
+   
+  </div>
+  
+  
+  <div *ngIf="movies.length > 0" style="background-image: linear-gradient(to top, #fad0c4 0%, #ffd1ff 100%);background-image: linear-gradient(to top, #cfd9df 0%, #e2ebf0 100%);">
+    <h2>Movies</h2>
+    <ul>
+       
+      <li *ngFor="let movie of movies">
+       <h2>  {{ movie.title }}</h2>
+
+         <img [src]="'https://image.tmdb.org/t/p/w500/' + movie.poster_path" >
+         <br>
+    <strong>{{ movie.overview }}</strong>
+      </li>
+
+    </ul>
+  </div>
